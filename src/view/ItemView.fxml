@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="53.0" prefWidth="300.0" style="-fx-background-color: #1E1E1E; -fx-border-radius: 5em;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
+    <stylesheets>
+        <URL value="@/css/Item.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="iv_AppIcon" fitHeight="40.0" fitWidth="37.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo/windows.png" />
+         </image></ImageView>
+      <Label fx:id="lb_AppName" layoutX="54.0" layoutY="10.0" text="App Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_AppEmail" layoutX="53.0" layoutY="28.0" text="Main@mail.com" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
